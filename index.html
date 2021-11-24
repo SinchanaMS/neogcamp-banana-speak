@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Speak</title>
+    <!-- one way of using js in html (ex02) -->
+    <!-- <script>
+        console.log("Hello! Script is working fine")
+    </script> -->
+
+    <!-- second way of using js in html (ex02) -->
+    <style>
+        textarea{
+            width: 80%;
+            padding: 1rem;
+            margin: 0.5rem
+            ;
+            display: block;
+            height: 10vh;
+        }
+
+        #output{
+            border: 1px solid black;
+            width: 80%;
+            padding: 1rem;
+            margin: 0.5rem
+            ;
+            display: block;
+            height: 10vh;
+
+        }
+    </style>
+    
 </head>
 <body>
     <h1>talk bananananana!</h1>
+    <textarea id="txt-input" placeholder="Please drop your text in English here"></textarea>
+
+    <button id="btn-translate">Translate</button>
+    <div style="font-size: larger;">Output will come here 👇</div>
+    <div id="output"></div>
+
+    <script src="app.js" type="text/javascript"></script>
 </body>
 </html>
